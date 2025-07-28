@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AAF15F642E37FD1E00189502 /* AntifraudeSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AAF15F632E37FD1E00189502 /* AntifraudeSDK */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AAA2615D2E37C48E00B33A5E /* antifraude.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = antifraude.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF15F642E37FD1E00189502 /* AntifraudeSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = antifraude;
 			packageProductDependencies = (
+				AAF15F632E37FD1E00189502 /* AntifraudeSDK */,
 			);
 			productName = antifraude;
 			productReference = AAA2615D2E37C48E00B33A5E /* antifraude.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = AAA261542E37C48E00B33A5E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AAF15F622E37FD1E00189502 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AAA2615E2E37C48E00B33A5E /* Products */;
 			projectDirPath = "";
@@ -320,6 +329,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAF15F622E37FD1E00189502 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Legitimuz-Tech/legitimuz-sdk-geoloc-ios/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAF15F632E37FD1E00189502 /* AntifraudeSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAF15F622E37FD1E00189502 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */;
+			productName = AntifraudeSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAA261552E37C48E00B33A5E /* Project object */;
 }

@@ -1,0 +1,15 @@
+{
+  "originHash" : "25ebe9855c9df7ae568704bfeaae29480f63030e315ad7e44bfc48f8e5fe6838",
+  "pins" : [
+    {
+      "identity" : "legitimuz-sdk-geoloc-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Legitimuz-Tech/legitimuz-sdk-geoloc-ios/",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f9560689be1627b0b8dcf283d5bacc3f47acaace"
+      }
+    }
+  ],
+  "version" : 3
+}
