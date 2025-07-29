@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Legitimuz-Tech/legitimuz-sdk-geoloc-ios/",
       "state" : {
-        "branch" : "main",
-        "revision" : "f9560689be1627b0b8dcf283d5bacc3f47acaace"
+        "revision" : "f9560689be1627b0b8dcf283d5bacc3f47acaace",
+        "version" : "1.2.0"
       }
     }
   ],
