@@ -20,6 +20,130 @@ This demo app showcases the complete integration of Legitimuz's fraud prevention
 - **Swift 5.5+**
 - Valid Legitimuz API credentials
 
+## 📦 Installation
+
+### Method 1: Swift Package Manager (Recommended)
+
+#### Option A: Add via Xcode UI
+
+1. **Open your iOS project** in Xcode
+2. **Navigate to File** → **Add Package Dependencies...**
+3. **Enter the package URL**:
+   ```
+   https://github.com/your-organization/AntifraudeSDK
+   ```
+4. **Select version requirements**:
+   - Choose "Up to Next Major Version" and enter the latest version
+   - Or select "Branch" and use `main` for the latest development version
+5. **Click "Add Package"**
+6. **Select your target** and click "Add Package"
+
+#### Option B: Add via Package.swift
+
+If you're using Swift Package Manager in a Package.swift file:
+
+```swift
+// Package.swift
+import PackageDescription
+
+let package = Package(
+    name: "YourApp",
+    platforms: [
+        .iOS(.v14)
+    ],
+    dependencies: [
+        .package(
+            url: "https://github.com/your-organization/AntifraudeSDK",
+            from: "1.0.0"
+        )
+    ],
+    targets: [
+        .target(
+            name: "YourApp",
+            dependencies: ["AntifraudeSDK"]
+        )
+    ]
+)
+```
+
+### Method 2: Manual Installation
+
+#### Download and Add Manually
+
+1. **Download the SDK**:
+   - Clone or download the AntifraudeSDK repository
+   - Or download the release package from your distribution source
+
+2. **Add to your project**:
+   - Drag the `AntifraudeSDK` folder into your Xcode project
+   - Ensure "Copy items if needed" is checked
+   - Select your target in "Add to target"
+
+3. **Configure Build Settings**:
+   - In your target's Build Settings, ensure iOS Deployment Target is set to 14.0 or later
+
+### Method 3: Local Development Setup
+
+If you're working with a local copy of the SDK:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-organization/AntifraudeSDK.git
+   ```
+
+2. **Add Local Package**:
+   - In Xcode: File → Add Package Dependencies...
+   - Click "Add Local..." 
+   - Navigate to and select the cloned `AntifraudeSDK` folder
+   - Click "Add Package"
+
+## 🛠 Project Configuration
+
+### Required Permissions
+
+Add these permissions to your `Info.plist` if you plan to use geolocation features:
+
+```xml
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>This app uses location to provide enhanced fraud prevention services.</string>
+<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+<string>This app uses location to provide enhanced fraud prevention services.</string>
+```
+
+### Import the SDK
+
+After installation, import the SDK in your Swift files:
+
+```swift
+import AntifraudeSDK
+```
+
+### Verify Installation
+
+Create a simple test to verify the SDK is properly installed:
+
+```swift
+import SwiftUI
+import AntifraudeSDK
+
+struct TestView: View {
+    var body: some View {
+        VStack {
+            Text("AntifraudeSDK Test")
+            Button("Test SDK") {
+                let config = LegitimuzSDKConfig(
+                    apiURL: "https://test.legitimuz.com",
+                    token: "test-token",
+                    action: "test"
+                )
+                let sdk = LegitimuzAntiFraude.create(config: config)
+                print("SDK created successfully: \(sdk)")
+            }
+        }
+    }
+}
+```
+
 ## 🚀 Quick Start
 
 ### 1. Clone and Setup
