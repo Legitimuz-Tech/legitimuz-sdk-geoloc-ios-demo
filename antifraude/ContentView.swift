@@ -65,7 +65,7 @@ struct ContentView: View {
                                 }
                                 Text(viewModel.isLoading ? "Analyzing..." : "Send Analysis")
                             }
-                            .frame(maxWidth: .infinity)
+                            .frame(maxWidth: .infinity, minHeight: 44)
                             .padding()
                             .background(viewModel.cpf.isEmpty ? Color.gray : Color.blue)
                             .foregroundColor(.white)
@@ -75,7 +75,10 @@ struct ContentView: View {
                     }
                     .padding(.horizontal)
                     
-                    Spacer().frame(height: 20)
+                    // Fixed spacing instead of flexible spacer
+                    Rectangle()
+                        .fill(Color.clear)
+                        .frame(height: 20)
                     
                     // Information Card
                     VStack(alignment: .leading, spacing: 12) {
@@ -98,7 +101,10 @@ struct ContentView: View {
                     .cornerRadius(12)
                     .padding(.horizontal)
                     
-                    Spacer()
+                    // Bottom padding instead of flexible spacer
+                    Rectangle()
+                        .fill(Color.clear)
+                        .frame(height: 20)
                 }
             }
             .navigationTitle("")
