@@ -116,6 +116,7 @@ struct ContentView: View {
 }
 
 @available(iOS 14.0, *)
+@MainActor
 class LegitimuzDemoViewModel: ObservableObject {
     @Published var cpf: String = ""
     @Published var email: String = ""
@@ -163,10 +164,8 @@ class LegitimuzDemoViewModel: ObservableObject {
     }
     
     private func showMessage(_ message: String) {
-        DispatchQueue.main.async {
-            self.alertMessage = message
-            self.showAlert = true
-        }
+        alertMessage = message
+        showAlert = true
     }
 }
 
