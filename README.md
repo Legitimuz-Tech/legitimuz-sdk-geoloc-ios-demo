@@ -30,7 +30,7 @@ This demo app showcases the complete integration of Legitimuz's fraud prevention
 2. **Navigate to File** → **Add Package Dependencies...**
 3. **Enter the package URL**:
    ```
-   https://github.com/your-organization/AntifraudeSDK
+   https://github.com/Legitimuz-Tech/legitimuz-sdk-geoloc-ios/
    ```
 4. **Select version requirements**:
    - Choose "Up to Next Major Version" and enter the latest version
@@ -53,7 +53,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/your-organization/AntifraudeSDK",
+            url: "https://github.com/Legitimuz-Tech/legitimuz-sdk-geoloc-ios/",
             from: "1.0.0"
         )
     ],
@@ -88,7 +88,7 @@ If you're working with a local copy of the SDK:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-organization/AntifraudeSDK.git
+   git clone https://github.com/Legitimuz-Tech/legitimuz-sdk-geoloc-ios/
    ```
 
 2. **Add Local Package**:
