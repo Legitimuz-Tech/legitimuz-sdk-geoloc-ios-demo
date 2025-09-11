@@ -285,8 +285,8 @@ extension YourViewModel: LegitimuzEventHandler {
 | `apiURL` | String | ✅ Yes | Your Legitimuz API endpoint URL |
 | `token` | String | ✅ Yes | Authentication token provided by Legitimuz |
 | `action` | String | ✅ Yes | Action type ("signin", "signup", "transaction", etc.) |
-| `origin` | String? | ❌ Optional | Origin URL for backend validation |
-| `enableRequestGeolocation` | Bool | ❌ Optional | Enable automatic location tracking (default: false) |
+| `origin` | String? | ✅ Yes | Origin URL for backend validation |
+| `enableRequestGeolocation` | Bool | ✅ Yes | Enable automatic location tracking (default: false) |
 | `eventHandler` | LegitimuzEventHandler? | ❌ Optional | Event callback handler |
 
 ### Action Types
