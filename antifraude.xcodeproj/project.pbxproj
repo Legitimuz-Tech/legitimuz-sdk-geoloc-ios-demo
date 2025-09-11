@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AAB43DC12E3906E900505625 /* AntifraudeSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AAB43DC02E3906E900505625 /* AntifraudeSDK */; };
+		AA02070E2E7354C100C8DEAE /* AntifraudeSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AA02070D2E7354C100C8DEAE /* AntifraudeSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAB43DC12E3906E900505625 /* AntifraudeSDK in Frameworks */,
+				AA02070E2E7354C100C8DEAE /* AntifraudeSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 			);
 			name = antifraude;
 			packageProductDependencies = (
-				AAB43DC02E3906E900505625 /* AntifraudeSDK */,
+				AA02070D2E7354C100C8DEAE /* AntifraudeSDK */,
 			);
 			productName = antifraude;
 			productReference = AAA2615D2E37C48E00B33A5E /* antifraude.app */;
@@ -101,7 +101,7 @@
 			mainGroup = AAA261542E37C48E00B33A5E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				AAB43DBF2E3906E900505625 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */,
+				AA3DB6D92E73531800A1F5B1 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AAA2615E2E37C48E00B33A5E /* Products */;
@@ -272,12 +272,12 @@
 				DEVELOPMENT_TEAM = Z9SA54MPAQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses location data to enhance fraud detection and security analysis. Location information helps verify the authenticity of transactions and protect against fraudulent activities.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses location data to enhance fraud detection and security analysis. Location information helps verify the authenticity of transactions and protect against fraudulent activities.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,12 +301,12 @@
 				DEVELOPMENT_TEAM = Z9SA54MPAQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses location data to enhance fraud detection and security analysis. Location information helps verify the authenticity of transactions and protect against fraudulent activities.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app uses location data to enhance fraud detection and security analysis. Location information helps verify the authenticity of transactions and protect against fraudulent activities.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,20 +344,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AAB43DBF2E3906E900505625 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */ = {
+		AA3DB6D92E73531800A1F5B1 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Legitimuz-Tech/legitimuz-sdk-geoloc-ios/";
+			repositoryURL = "https://github.com/Legitimuz-Tech/legitimuz-sdk-geoloc-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AAB43DC02E3906E900505625 /* AntifraudeSDK */ = {
+		AA02070D2E7354C100C8DEAE /* AntifraudeSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AAB43DBF2E3906E900505625 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */;
+			package = AA3DB6D92E73531800A1F5B1 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */;
 			productName = AntifraudeSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
