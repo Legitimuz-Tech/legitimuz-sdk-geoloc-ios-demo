@@ -167,7 +167,7 @@ Update the configuration in `ContentView.swift`:
 let config = LegitimuzSDKConfig(
     apiURL: "YOUR_API_URL",           // Replace with your API endpoint
     token: "YOUR_API_TOKEN",          // Replace with your authentication token
-    action: "signin",                 // Action type: "signin", "signup", "transaction", etc.
+    action: "signin",                 // Action type: "signin", "signup", "withdraw","deposit","verify" etc.
     origin: "YOUR_ORIGIN",            // Your app's origin URL
     enableRequestGeolocation: true,   // Enable automatic location tracking
     eventHandler: self               // Event handler for SDK callbacks
@@ -295,9 +295,9 @@ The SDK supports various action types to categorize different user behaviors:
 
 - `"signin"` - User login/authentication
 - `"signup"` - User registration  
-- `"transaction"` - Financial transactions
-- `"password_reset"` - Password reset attempts
-- `"profile_update"` - Profile modifications
+- `"deposit"` - deposit money attempts
+- `"withdraw"` - Withdraw money attempts
+- `"verify"` - transaction liveness verification attempt
 - Custom actions as needed
 
 ## 📍 Geolocation Features
