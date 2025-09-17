@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA02070E2E7354C100C8DEAE /* AntifraudeSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AA02070D2E7354C100C8DEAE /* AntifraudeSDK */; };
+		AA1D27212E7B6CED0076BCE5 /* AntifraudeSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AA1D27202E7B6CED0076BCE5 /* AntifraudeSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA02070E2E7354C100C8DEAE /* AntifraudeSDK in Frameworks */,
+				AA1D27212E7B6CED0076BCE5 /* AntifraudeSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 			);
 			name = antifraude;
 			packageProductDependencies = (
-				AA02070D2E7354C100C8DEAE /* AntifraudeSDK */,
+				AA1D27202E7B6CED0076BCE5 /* AntifraudeSDK */,
 			);
 			productName = antifraude;
 			productReference = AAA2615D2E37C48E00B33A5E /* antifraude.app */;
@@ -101,7 +101,7 @@
 			mainGroup = AAA261542E37C48E00B33A5E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				AA3DB6D92E73531800A1F5B1 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */,
+				AA1D271F2E7B6CED0076BCE5 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AAA2615E2E37C48E00B33A5E /* Products */;
@@ -344,20 +344,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AA3DB6D92E73531800A1F5B1 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */ = {
+		AA1D271F2E7B6CED0076BCE5 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Legitimuz-Tech/legitimuz-sdk-geoloc-ios";
+			repositoryURL = "https://github.com/Legitimuz-Tech/legitimuz-sdk-geoloc-ios/";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AA02070D2E7354C100C8DEAE /* AntifraudeSDK */ = {
+		AA1D27202E7B6CED0076BCE5 /* AntifraudeSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AA3DB6D92E73531800A1F5B1 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */;
+			package = AA1D271F2E7B6CED0076BCE5 /* XCRemoteSwiftPackageReference "legitimuz-sdk-geoloc-ios" */;
 			productName = AntifraudeSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
